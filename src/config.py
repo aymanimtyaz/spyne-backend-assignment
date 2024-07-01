@@ -1,0 +1,18 @@
+from os import environ as env
+
+from dotenv import load_dotenv
+
+
+
+load_dotenv()
+
+
+MONGO_CONNECTION_STRING: str = env["MONGO_CONNECTION_STRING"]
+MONGO_DATABASE_NAME: str = env["MONGO_DATABASE_NAME"]
+
+JWT_SECRET: str = env["JWT_SECRET"]
+JWT_VALIDITY_DAYS: int = int(env["JWT_VALIDITY_DAYS"])
+
+
+LOCAL_STORAGE_STATIC_FILES_PATH: str = env["LOCAL_STORAGE_STATIC_FILES_PATH"]
+LOCAL_STORAGE_BASE_URL: str = env["LOCAL_STORAGE_BASE_URL"]
